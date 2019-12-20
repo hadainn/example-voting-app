@@ -5,8 +5,8 @@ import socket
 import random
 import json
 
-option_a = os.getenv('OPTION_A', "Citrix")
-option_b = os.getenv('OPTION_B', "VmWare")
+option_a = os.getenv('OPTION_A', "Hadain")
+option_b = os.getenv('OPTION_B', "Shiveprasad")
 hostname = socket.gethostname()
 version = 'v1'
 
