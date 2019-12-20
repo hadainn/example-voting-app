@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 networks: 
   vote: 
     driver: bridge
@@ -8,7 +8,7 @@ volumes:
 
 services: 
     vote: 
-      image: schoolofdevops/vote
+      image: hadain/vote:latest
       ports: 
         - 80
       networks: 
@@ -36,7 +36,7 @@ services:
         - "db-data:/var/lib/postgresql/data"
    
     results: 
-      image: schoolofdevops/vote-result
+      image: hadain/result:latest
       ports:
         - 5001:80
       depends_on: 
